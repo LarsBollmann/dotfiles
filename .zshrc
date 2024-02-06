@@ -75,6 +75,7 @@ plugins=(
     zsh-autosuggestions
     sudo
     z
+    web-search
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -106,6 +107,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 zstyle :compinstall filename '/home/lars/.zshrc'
+
+fpath+=~/.zfunc
 
 autoload -Uz compinit
 compinit
