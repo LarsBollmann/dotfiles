@@ -11,3 +11,5 @@ vim.keymap.set("t", "<C-7>", "<cmd>close<cr>", { desc = "Hide Terminal" })
 
 vim.keymap.set("n", "<A-left>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
 vim.keymap.set("n", "<A-right>", "<cmd>bnext<cr>", { desc = "Next buffer" })
+
+vim.keymap.set("n", "ß", "$", { desc = "Go to end of line" })

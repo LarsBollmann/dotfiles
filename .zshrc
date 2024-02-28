@@ -73,9 +73,11 @@ export ZSH="$HOME/.oh-my-zsh"
 plugins=( 
     git
     zsh-autosuggestions
+    zsh-syntax-highlighting
     sudo
     z
     web-search
+    thefuck
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -174,3 +176,5 @@ config config --local status.showUntrackedFiles no
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+eval $(thefuck --alias)
